@@ -15,7 +15,7 @@ button.addEventListener('click',() => {
         `;
     }
 
-    fetch(`http://api.weatherapi.com/v1/current.json?key=8e69b85a81b2423882055353251009&q=${cityname}&aqi=no`)
+    fetch(`https://api.weatherapi.com/v1/current.json?key=8e69b85a81b2423882055353251009&q=${cityname}&aqi=no`)
     .then(response => response.json())
     .then(data => updateTemp(data))
    
